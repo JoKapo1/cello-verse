@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jolayemi Akapo">
+    <meta name="keywords" content="Phone, Email, Name">
+    <meta name="description" content="Contact Information">
+    <title>Contact CelloVerse</title>
+    <link rel="stylesheet" href="/css/contactStyling.css"/>
+    <link rel="icon" href="/images/CelloVerseLogo.png" type="image/png"> <!--[4]--> <!--<cite>"Black & White Cello". Source: Jolayemi Akapo. 2023-->
+</head>
+<body>
+    <header> 
+        <h1 class="level1">
+            <img src="/images/CelloVerseLogo.png" alt="CelloVerse Logo" class="logo">
+            CelloVerse
+        </h1> <!--[4]-->
+        <h3 class="level2"><small>Tap Into Your Creativity</small></h3>
+        <nav>
+            <ul class="level3">
+                <!--used relative references to access the other three pages-->
+                <li><a href="/html/index.html"target="_blank">Homepage</a></li> 
+                <li><a href="/html/about.html"target="_blank">About</a></li>
+                <li><a href="/html/lessons.html"target="_blank">Lessons</a></li>
+                <li class="current"><a href="/html/contact.html">Contact</a></li><!--the current page-->
+            </ul>
+        </nav> 
+    </header> 
+    <main>
+        <article>
+           <p><b>Registration will be confirmed by the centre. They will contact you within 24 business hours.</b>
+                Ugh cardigan man braid dreamcatcher, authentic kitsch swag beard helvetica pok pok cupping. DSA 
+                chia cliche schlitz semiotics gorpcore portland hexagon jianbing chambray. Tonx trust fund fanny 
+                pack shaman banh mi direct trade. Leggings shabby chic health goth, paleo cray sus gastropub mukbang 
+                selfies pug VHS schlitz cliche [1].
+            </p>
+            <form method="get" action="mailto:jojodabest48@gmail.com">
+                <fieldset id="important">
+                    <legend>Lessons Registration Form</legend>
+
+                    <label for="salutations">Salutation:</label>
+                    <select name="salutations" id="salutations" required>
+                        <option value="dr.">Dr.</option>
+                        <option value="mr.">Mr.</option>
+                        <option value="mrs.">Mrs.</option>
+                        <option value="ms.">Ms.</option>
+                    </select>
+                    <br><br>
+
+                    <label for="firstName">First Name:</label>
+                    <input type="text" name="firstName" id="firstName" placeholder="Enter your first name" autofocus required>
+                    <br><br>
+
+                    <label for="lastName"> Last Name:</label>
+                    <input type="text" name="lastName" id="lastName" placeholder="Enter your last name" required>
+                    <br><br>
+
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="(123)-456-6789" required>
+                    <br><br>
+
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" pattern="[a-z0-9]+@mtroyal\.ca" placeholder="jsmit123@mtroyal.ca" required>
+                    <br><br><br>
+
+                    <label for="lessonOnline">Online Lessons</label>
+                        <input type="radio" name="lessonType" id="lessonOnline" required>
+                    
+                    <label for="lessonInPerson">In Person Lessons</label>
+                        <input type="radio" name="lessonType" id="lessonInPerson">
+                    <br><br><br>
+
+                    <label for="location">Choose Lesson Centre Location</label><br>
+                    <select name="location" id="location" required>
+                        <option value="1245 Trebleclef Street NW">1245 Trebleclef Street NW</option>
+                        <option value="300 Stringquartet Drive NE">300 Stringquartet Drive NE</option>
+                        <option value="782 Bassclef Avenue SW">782 Bassclef Avenue SW</option>
+                        <option value="5879 Solo Way SE">5879 Solo Way SE</option>
+                    </select>
+                    <br><br><br>
+
+                    Preferred Lesson Days (please select 2)<br>
+                    <label for="Monday">Monday</label>
+                    <input type="checkbox" name="lessonDays" value="Monday">
+
+                    <label for="Tuesday">Tuesday</label>
+                    <input type="checkbox" name="lessonDays" value="Tuesday">
+
+                    <label for="Wednesday">Wednesday</label>
+                    <input type="checkbox" name="lessonDays" value="Wednesday">
+
+                    <label for="Thursday">Thursday</label>
+                    <input type="checkbox" name="lessonDays" value="Thursday">
+
+                    <label for="Friday">Friday</label>
+                    <input type="checkbox" name="lessonDays" value="Friday">
+                    <br><br><br>
+
+                    Preferred Lesson Time (select top 2 preferences)<br>
+                    <label for="1pm-4pm">1:00pm-4:00pm</label>
+                    <input type="checkbox" name="lessonTime" value="1pm-4pm">
+
+                    <label for="4pm-7pm">4:00pm-7:00pm</label>
+                    <input type="checkbox" name="lessonTime" value="4pm-7pm">
+
+                    <label for="7pm-9pm">7:00pm-9:00pm</label>
+                    <input type="checkbox" name="lessonTime" value="7pm-9pm">
+
+                    <label for="anytime">Anytime</label>
+                    <input type="checkbox" name="lessonTime" value="anytime">
+                    <br><br><br>
+
+                    <label for="subject">Subject:</label>
+                    <input type="text" name="subject" id="subject" placeholder="Enter email subject" required>
+                    <br>
+
+                    <label for="body">Message:</label><br>
+                    <textarea name="body" id="body" rows="5" cols="33" required></textarea>
+                    <br><br>
+
+                    <input type="reset" value="Reset">
+                    <input type="submit" value="Submit">
+                </fieldset>
+
+            </form> 
+        </article>
+            
+    </main>  
+    <footer>
+        <div class="level2">&copy;Jolayemi Akapo, 2025.</div>
+    </footer> 
+</body>
+</html>

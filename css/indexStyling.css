@@ -1,0 +1,94 @@
+/*HOMEPAGE*/
+/*this is for the main*/
+html {
+    background-color: white;
+    color:black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px; /*default size*/
+}
+/*ensures that there's no white space on the sides of the header + footer*/
+body{
+    margin: 0;
+}
+/*targets h1*/
+.level1 {
+    background-color: #AA6639;
+    color: #551700;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 3rem; /*48px*/
+    margin: 0; /*creates space between the element and its neighboring elements (top and bottom -->.level2.)*/
+}
+.logo{ /*[3]*/
+    width: 70px;
+    height: auto;
+}
+.level2 {
+    background-color: #D4876A;
+    color: #551700;
+    text-align: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  
+    font-size: 1.2rem;
+    margin-top: 0; /*creates space between .level1 and .level2*/
+}
+/*targets the navigation section*/
+.level3 {
+    background-color: #FFCBAA;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style-type: none; /*removes bullets. [2]*/
+    display: flex; /* displays flex items horizontally. [3]*/
+    justify-content: center; /* positions flex items in the centre of the menu (container). [3]*/
+}
+/*targeting the cells of the table*/
+.level3 li {
+    padding: 0.8rem;
+}
+/*styling the anchor elements (the hyperlinks)*/
+.level3 a {
+    text-decoration: none;   
+    color: #551700;
+    text-align: center;
+}
+/*styling the current page cell*/
+.level3 li.current {
+    background-color: #551700;
+}
+.level3 li.current a {
+    color: #FFCBAA
+}
+/*pseudo-class selector (hover)*/
+.level3 li:hover {
+    background-color:#552100;
+}
+/*changes text color on hover*/
+.level3 li:hover a{
+    color: #FFCBAA;
+}
+/*targets all the h2*/
+.level4{
+    font-family: 'Times New Roman', Times, serif;
+    color: #551700;
+}
+/*for the image*/
+.right {
+    float: right;
+    width: 150px; 
+    margin-left: 1em;
+    margin-top: 0.3em;
+    font-size: small;
+}
+article{
+    padding-top: 15px;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-bottom: 25px;
+}
+footer{
+    text-align: center;
+}
+
+
+
+
+
+
